@@ -3,10 +3,11 @@ start = input("--> ")
 Right_answer = 0
 Wrong_answer = 0
 Total_answer = 0
+Skipped_question = 0
 if start.lower() == "yes":
     print("""1. What is the powerhouse of the cell?
     a.Mitochondria     b.Chloroplast
-    c.Nucleus          d.None of these""")
+    c.Nucleus          d.None of these      e.Skip""")
     Ans = input("--> ")
     if Ans == "a" or Ans.lower() == "mitochondria":
         print("Right Answer!")
@@ -17,13 +18,13 @@ if start.lower() == "yes":
         Total_answer += 1
         Wrong_answer += 1
 
-    print("\n Total Questions --> ", Total_answer,
+    print("\n   Attempted Questions --> ", Total_answer,
       "\n Right Answer --> ", Right_answer, 
       "\n Wrong Answer --> ", Wrong_answer)
    
     print("""2. Which of the following is a conductor:-
     a.Air              b.Glass  
-    c.Metals           d.Rubber""")
+    c.Metals           d.Rubber      e.Skip""")
     Ans = input("--> ")
     if Ans == "c" or Ans.lower() == "metals":
         print("Right Answer!")
@@ -34,14 +35,14 @@ if start.lower() == "yes":
         Total_answer += 1
         Wrong_answer += 1
 
-    print("\n Total Questions --> ", Total_answer,
+    print("\n Attempted Questions --> ", Total_answer,
       "\n Right Answer --> ", Right_answer, 
       "\n Wrong Answer --> ", Wrong_answer)
    
    
     print("""3. Which syntax is use to define an object in python?
     a.print            b.def        
-    c.or               d.None of these""")
+    c.or               d.None of these      e.Skip""")
     Ans = input("--> ")
     if Ans == "b" or Ans.lower() == "def":
         print("Right Answer!")
@@ -52,13 +53,13 @@ if start.lower() == "yes":
         Total_answer += 1
         Wrong_answer += 1
 
-    print("\n Total Questions --> ", Total_answer,
+    print("\n Attempted Questions --> ", Total_answer,
       "\n Right Answer --> ", Right_answer, 
       "\n Wrong Answer --> ", Wrong_answer)
    
     print("""4. What is the capital of Germany?
     a.Berlin           b.Hamburg
-    c.Austria          d.None of these""")
+    c.Austria          d.None of these      e.Skip""")
     Ans = input("--> ")
     if Ans == "a" or Ans.lower() == "berlin":
         print("Right Answer!")
@@ -76,7 +77,7 @@ if start.lower() == "yes":
 
     print("""5. What is the smallest country in the world?
     a.Bangladesh       b.Vatican city
-    c.Sri Lanka        d.None of these""")
+    c.Sri Lanka        d.None of these      e.Skip""")
     Ans = input("--> ")
     if Ans == "b" or Ans.lower() == "vatican city":
         print("Right Answer!")
@@ -94,7 +95,7 @@ if start.lower() == "yes":
                         
     print("""6. What is the biggest country in the world?
     a.USA              b.Russia 
-    c.Canada           d.None of these""")
+    c.Canada           d.None of these      e.Skip""")
     Ans = input("--> ")
     if Ans == "b" or Ans.lower() == "russia":
         print("Right Answer!")
@@ -105,9 +106,83 @@ if start.lower() == "yes":
         Total_answer += 1
         Wrong_answer += 1
 
+    print("\n Total Questions --> ", Total_answer,
+      "\n Right Answer --> ", Right_answer, 
+      "\n Wrong Answer --> ", Wrong_answer)    
 
-    # Continue with the remaining questions...
+    
+    print("""7. Why do the molecules move in the matter?
+    a.Air              b.Heat energy
+    c.Electric energy  d.None of these""")
+    Ans = input("--> ")
+    if Ans == "b" or Ans.lower() == "Heat energy":
+        print("Right Answer!")
+        Total_answer += 1
+        Right_answer += 1
+    else:
+        print("Wrong Answer!")
+        Total_answer += 1
+        Wrong_answer += 1
 
+    print("\n Total Questions --> ", Total_answer,
+      "\n Right Answer --> ", Right_answer, 
+      "\n Wrong Answer --> ", Wrong_answer)    
+
+    
+    print("""8. What is the value of a mole?
+    a.6.3*10          b.6.022*10^23
+    c.6.022*10        d.None of these""")
+    Ans = input("--> ")
+    if Ans == "b" or Ans.lower() == "6.022*10^23":
+        print("Right Answer!")
+        Total_answer += 1
+        Right_answer += 1
+    else:
+        print("Wrong Answer!")
+        Total_answer += 1
+        Wrong_answer += 1
+
+    print("\n Total Questions --> ", Total_answer,
+      "\n Right Answer --> ", Right_answer, 
+      "\n Wrong Answer --> ", Wrong_answer)
+    
+
+    print("""9. What is the biggest planet in our solar system?
+    a.Neptune           b.Saturn
+    c.Jupiter           d.None of these""")
+    Ans = input("--> ")
+    if Ans == "b" or Ans.lower() == "6.022*10^23":
+        print("Right Answer!")
+        Total_answer += 1
+        Right_answer += 1
+    else:
+        print("Wrong Answer!")
+        Total_answer += 1
+        Wrong_answer += 1
+
+    print("\n Total Questions --> ", Total_answer,
+      "\n Right Answer --> ", Right_answer, 
+      "\n Wrong Answer --> ", Wrong_answer)
+    
+
+    
+    print("""10. What is the symbol of Sodium?
+    a.Si               b.Na
+    c.S                d.None of these""")
+    Ans = input("--> ")
+    if Ans == "b" or Ans.lower() == "6.022*10^23":
+        print("Right Answer!")
+        Total_answer += 1
+        Right_answer += 1
+    else:
+        print("Wrong Answer!")
+        Total_answer += 1
+        Wrong_answer += 1
+
+    print("\n Total Questions --> ", Total_answer,
+      "\n Right Answer --> ", Right_answer, 
+      "\n Wrong Answer --> ", Wrong_answer)
+    
     if Right_answer > 7:
         print("Congrats you passed the test and got", Right_answer, "right answers and", Wrong_answer, "wrong answers.")
     elif Right_answer < 7 and Right_answer > 5:
