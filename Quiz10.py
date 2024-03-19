@@ -3,7 +3,6 @@ start = input("--> ")
 Right_answer = 0
 Wrong_answer = 0
 Total_answer = 0
-Skipped_question = 0
 if start.lower() == "yes":
     print("""1. What is the powerhouse of the cell?
     a.Mitochondria     b.Chloroplast
