@@ -3,10 +3,11 @@ start = input("--> ")
 Right_answer = 0
 Wrong_answer = 0
 Total_answer = 0
+Skipped_question = 0
 if start.lower() == "yes":
     print("""1. What is the powerhouse of the cell?
     a.Mitochondria     b.Chloroplast
-    c.Nucleus          d.None of these      e.Skip""")
+    c.Nucleus          d.None of these""")
     Ans = input("--> ")
     if Ans == "a" or Ans.lower() == "mitochondria":
         print("Right Answer!")
@@ -23,7 +24,7 @@ if start.lower() == "yes":
    
     print("""2. Which of the following is a conductor:-
     a.Air              b.Glass  
-    c.Metals           d.Rubber      e.Skip""")
+    c.Metals           d.Rubber""")
     Ans = input("--> ")
     if Ans == "c" or Ans.lower() == "metals":
         print("Right Answer!")
@@ -41,7 +42,7 @@ if start.lower() == "yes":
    
     print("""3. Which syntax is use to define an object in python?
     a.print            b.def        
-    c.or               d.None of these      e.Skip""")
+    c.or               d.None of these""")
     Ans = input("--> ")
     if Ans == "b" or Ans.lower() == "def":
         print("Right Answer!")
@@ -58,7 +59,7 @@ if start.lower() == "yes":
    
     print("""4. What is the capital of Germany?
     a.Berlin           b.Hamburg
-    c.Austria          d.None of these      e.Skip""")
+    c.Austria          d.None of these""")
     Ans = input("--> ")
     if Ans == "a" or Ans.lower() == "berlin":
         print("Right Answer!")
@@ -76,7 +77,7 @@ if start.lower() == "yes":
 
     print("""5. What is the smallest country in the world?
     a.Bangladesh       b.Vatican city
-    c.Sri Lanka        d.None of these      e.Skip""")
+    c.Sri Lanka        d.None of these""")
     Ans = input("--> ")
     if Ans == "b" or Ans.lower() == "vatican city":
         print("Right Answer!")
@@ -94,7 +95,7 @@ if start.lower() == "yes":
                         
     print("""6. What is the biggest country in the world?
     a.USA              b.Russia 
-    c.Canada           d.None of these      e.Skip""")
+    c.Canada           d.None of these""")
     Ans = input("--> ")
     if Ans == "b" or Ans.lower() == "russia":
         print("Right Answer!")
@@ -112,7 +113,7 @@ if start.lower() == "yes":
     
     print("""7. Why do the molecules move in the matter?
     a.Air              b.Heat energy
-    c.Electric energy  d.None of these""")
+    c.Both of these    d.None of these""")
     Ans = input("--> ")
     if Ans == "b" or Ans.lower() == "Heat energy":
         print("Right Answer!")
